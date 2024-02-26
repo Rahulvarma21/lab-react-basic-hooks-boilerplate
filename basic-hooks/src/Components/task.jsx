@@ -4,14 +4,14 @@ import Toggle from "./Progression6";
 function Task() {
   const [state, setState] = useState(0);
   const [display, setDisplay] = useState(false);
-  // const [init, setInit] = useState(false);
+  const [init, setInit] = useState(false);
 
-  // useEffect(() => {
-  //   setInit(true);
-  //   if (init) {
-  //     alert("Content is been clicked");
-  //   }
-  // }, [display]);
+  useEffect(() => {
+    setInit(true);
+    if (init) {
+      alert("Content is been clicked");
+    }
+  }, [display]);
 
   let handleClick = () => {
     setDisplay(!display);
